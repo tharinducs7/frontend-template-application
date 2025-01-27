@@ -1,11 +1,11 @@
-import { Container } from '@openedx/paragon';
+// import { Container } from '@openedx/paragon';
 import {
   SimpleGrid, Box, Card, Image, Stack, CardBody, Text, Heading, CardFooter, Button,
 } from '@chakra-ui/react';
 
-const ExamplePage = () => (
+const ExamplePage: React.FC  = () => (
   <main>
-    <Container className="py-5">
+    <div className="py-5">
       <h1>Example Page</h1>
       <p>Hello world hiii</p>
       <SimpleGrid columns={2} spacing={10}>
@@ -45,7 +45,7 @@ const ExamplePage = () => (
         <Box bg="tomato" height="80px" />
         <Box bg="tomato" height="80px" />
       </SimpleGrid>
-    </Container>
+    </div>
   </main>
 );
 
